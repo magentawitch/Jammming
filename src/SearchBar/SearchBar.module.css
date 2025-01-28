@@ -1,0 +1,33 @@
+/* SEARCH BAR */
+
+.searchBar {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0;
+}
+
+.searchBarForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.userInput {
+    padding: .5rem 4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: 2px solid #768181;
+    
+}
+
+.userInput:focus {
+    border: 1px solid #73b3b2;
+    outline: 1px solid #73b3b2;
+}
+

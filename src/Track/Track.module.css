@@ -1,0 +1,21 @@
+.track {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.trackInfo {
+    display: flex;
+}
+
+.trackTitle {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.trackArtist,
+.trackAlbum {
+    font-weight: 400;
+    margin: .125rem;
+    color: gray;
+}
