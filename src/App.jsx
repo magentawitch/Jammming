@@ -1,21 +1,30 @@
 import { useState } from 'react'
+import Header from './Header/Header';
 import SearchBar from './SearchBar/SearchBar';
 import Playlist from './Playlist/Playlist';
 import SearchResults from './SearchResults/SearchResults';
 import styles from './App.module.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [playlist, setPlaylist] = useState([]);
+
+  const handleAddTrack = (trackSelected) => {
+    setPlaylist((prev) => [...prev, trackSelected]);
+  }
+
+  const handleRemoveTrack = (trackKeySelected) => {
+    console.log({trackKeySelected, playlist})
+    setPlaylist(prev => prev.filter((track, i) => i !== trackKeySelected))
+  }
+
 
   return (
     <>
-    <div className={styles.header}>
-      <h1 className={styles.logo}>Jammming</h1>
-    </div>
+    <Header />
     <SearchBar />
     <div className={styles.tracklistsContainer}>
-      <SearchResults />
-      <Playlist />
+      <SearchResults onAddTrack={handleAddTrack} />
+      <Playlist playlist={playlist} onRemoveTrack={handleRemoveTrack} />
     </div>
 
     </>

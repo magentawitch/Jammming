@@ -2,10 +2,32 @@ import React from "react";
 import styles from "./SearchResults.module.css";
 import Tracklist from "../Tracklist/Tracklist";
 
-function SearchResults() {
+function SearchResults(props) {
+    const trackArray = [
+        {
+            name: "How far ill go",
+            artist: "Aurii Carvalho",
+            album: "Moana",
+            id: 1,
+        },
+        {
+            name: "Let it go",
+            artist: "Idina Menzel",
+            album: "Frozen",
+            id: 2,
+    
+        }
+    ]
+
+    const handleTrackClick = (track) => {
+        props.onAddTrack(track);
+    }
+
+    
+
     return (
         <div className={styles.container}>
-            <Tracklist />
+            <Tracklist icon="+" trackArray={trackArray} onTrackClick={handleTrackClick} />
         </div>
     )
 }

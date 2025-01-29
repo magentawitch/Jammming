@@ -1,17 +1,21 @@
 import React from "react";
 import Track from "../Track/Track";
 
-function Tracklist() {
+function Tracklist(props) {
 
     return (
         <div>
-            {trackArray.map((track) => 
-            <Track 
-            key={track.id}
-            name={track.name}
-            artist={track.artist}
-            album={track.album}
-            />
+            {props.trackArray.map((track, i) => 
+                <Track 
+                    key={i}
+                    name={track.name}
+                    artist={track.artist}
+                    album={track.album}
+                    icon={props.icon}
+                    id={track.id}
+
+                    onTrackClick={() => {props.onTrackClick(track, i); }}
+                />
             )}
         </div>
     )
@@ -20,21 +24,6 @@ function Tracklist() {
 export default Tracklist;
 
 
-const trackArray = [
-    {
-        name: "How far ill go",
-        artist: "Aurii Carvalho",
-        album: "Moana",
-        id: 1,
-    },
-    {
-        name: "Let it go",
-        artist: "Idina Menzel",
-        album: "Frozen",
-        id: 1,
-
-    }
-]
 
 
 /* function Example() {
