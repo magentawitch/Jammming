@@ -1,17 +1,4 @@
-.logo {
-  font-size: 2rem;
-  color: #fff;
-  padding: 1rem;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #6a398c;
-  margin-bottom: 5rem;
-}
+/* APP */
 
 .tracklistsContainer {
   display: flex;

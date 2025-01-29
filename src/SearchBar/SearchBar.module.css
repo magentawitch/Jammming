@@ -6,7 +6,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: .5rem 0;
 }
 
 .searchBarForm {
@@ -18,16 +17,24 @@
 }
 
 .userInput {
-    padding: .5rem 4rem;
+    padding: 0.75rem 4rem;
     text-align: center;
     margin-bottom: 1rem;
     border-radius: 5px;
-    border: 2px solid #768181;
+    border: 1px solid #240046;
     
 }
 
-.userInput:focus {
-    border: 1px solid #73b3b2;
-    outline: 1px solid #73b3b2;
+.userInput::placeholder {
+    font-size: 1rem;
 }
 
+.userInput:focus {
+    border: 1px solid #9c539c;
+    outline: 1px solid #9c539c;
+}
+
+.searchButton {
+    margin-top: .125rem;
+    padding: .5rem 1rem;
+}

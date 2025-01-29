@@ -2,8 +2,35 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    align-items: center;
-    border: 2px solid purple;
-    padding: 5rem 4rem;
+    align-items: center;    
+    padding: 1rem;
     margin: 1rem;
+    min-width: 18.75rem;
+    height: 31.25rem;
+    overflow: scroll;
+    background-color: #170025bd;
+}
+
+form {
+    margin-top: .5rem;
+    width: 100%;
+}
+
+.inputTitle {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #394032;
+    font-size: 1.75rem;
+    color: #d1c9d9;
+}
+
+.inputTitle:focus-visible {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #6a398c;
+}
+
+.inputTitle::placeholder {
+    color: #b0a9b6;
 }

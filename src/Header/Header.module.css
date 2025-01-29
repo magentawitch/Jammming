@@ -1,0 +1,15 @@
+.logo {
+    font-family: "michroma";
+    font-size: 2rem;
+    color: #fff;
+    padding: 1rem;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #2b0046;
+    margin-bottom: 4rem;
+  }

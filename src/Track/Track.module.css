@@ -1,7 +1,10 @@
+/* TRACK */
+
 .track {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    min-width: 18.75rem;
+    justify-content: space-between;
+    border-bottom: 1px solid #394032;
 }
 
 .trackInfo {
@@ -18,4 +21,42 @@
     font-weight: 400;
     margin: .125rem;
     color: gray;
+}
+
+.trackData {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: "Saira";
+    margin: .5rem 0;
+}
+
+.trackIcon {
+    display: flex;
+}
+
+/* ADD-REMOVE BUTTON */
+
+.addRemoveButton {
+    padding: 0.0625rem;
+    margin: 0.125rem;
+    border: none;
+    background-color: transparent;
+    color: #804595;
+    font-size: 1rem;
+    font-weight: 800;
+    transition: all 200ms ease-in-out;
+}
+
+.addRemoveButton:hover {
+  color: #4c4450;
+  background-color: transparent;
+  border: none;
+}
+
+.addRemoveButton:active{
+  color: #4c4450;
+  background-color: transparent;
+  border: none;
+  font-size: 0.9rem;
 }

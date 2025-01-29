@@ -13,7 +13,7 @@ function Playlist(props) {
     return (
         <div className={styles.container}>
             <form onSubmit={e => e.preventDefault()}>
-                <input type="text" value={playlistTitle} onChange={({target}) => setPlaylistTitle(target.value)} />
+                <input className={styles.inputTitle} type="text" placeholder="Unnamed Playlist" value={playlistTitle} onChange={({target}) => setPlaylistTitle(target.value)} />
             </form>
             {props.playlist.length > 0 && (
             <Tracklist icon="-" trackArray={props.playlist} onTrackClick={handleTrackClick} />

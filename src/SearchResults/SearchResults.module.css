@@ -3,7 +3,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    border: 2px solid magenta;
-    padding: 5rem 4rem;
+    padding: 1rem;
     margin: 1rem;
+    min-width: 18.75rem;
+    height: 31.25rem;
+    overflow: scroll;
+    background-color: #170025bd;
+}
+
+input {
+    width: 200px;
 }

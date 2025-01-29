@@ -3,6 +3,8 @@ html {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
+  background-color: #300d50;
+  color: #d1c9d9;
 }
 
 a {
@@ -26,10 +28,10 @@ button,
 .button {
   padding: 0.5rem;
   margin: 1rem;
-  border: 2px solid #804595;
-  border-radius: 1rem;
-  background-color: #f8f1fa;
-  color: #804595;
+  border: 2px solid #ff6600;
+  border-radius: .5rem;
+  background-color: #ff6600;
+  color: #fff;
   font-size: 1rem;
   font-weight: 500;
   transition: all 300ms ease-in-out;
@@ -38,13 +40,13 @@ button,
 button:hover,
 .button:hover {
   color: #f8f1fa;
-  background-color: #804595;
-  border: 2px solid #804595;
+  background-color: #f77d2b;
+  border: 2px solid #f77d2b;
 }
 
 button:active,
 .button:active {
   color: #deebec;
-  background-color: #6a398c;
-  border: 2px solid #6a398c;
+  background-color: #cc5200;
+  border: 2px solid #cc5200;
 }
