@@ -8,12 +8,8 @@ function Tracklist(props) {
             {props.trackArray.map((track, i) => 
                 <Track 
                     key={i}
-                    name={track.name}
-                    artist={track.artist}
-                    album={track.album}
                     icon={props.icon}
-                    id={track.id}
-
+                    track={track}
                     onTrackClick={() => {props.onTrackClick(track, i); }}
                 />
             )}

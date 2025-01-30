@@ -8,13 +8,13 @@ function SearchResults(props) {
             name: "How far ill go",
             artist: "Aurii Carvalho",
             album: "Moana",
-            id: 1,
+            uri: 1,
         },
         {
             name: "Let it go",
             artist: "Idina Menzel",
             album: "Frozen",
-            id: 2,
+            uri: 2,
     
         }
     ]

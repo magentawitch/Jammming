@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import Header from './Header/Header';
 import SearchBar from './SearchBar/SearchBar';
 import Playlist from './Playlist/Playlist';
@@ -13,8 +13,11 @@ function App() {
   }
 
   const handleRemoveTrack = (trackKeySelected) => {
-    console.log({trackKeySelected, playlist})
     setPlaylist(prev => prev.filter((track, i) => i !== trackKeySelected))
+  }
+
+  const handleSavePlaylist = () => {
+    setPlaylist([]);
   }
 
 
@@ -24,7 +27,7 @@ function App() {
     <SearchBar />
     <div className={styles.tracklistsContainer}>
       <SearchResults onAddTrack={handleAddTrack} />
-      <Playlist playlist={playlist} onRemoveTrack={handleRemoveTrack} />
+      <Playlist playlist={playlist} onRemoveTrack={handleRemoveTrack} onSavePlaylist={handleSavePlaylist} />
     </div>
 
     </>

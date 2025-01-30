@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import styles from "./Track.module.css";
 
 function Track(props) {
-    const { name, artist, album, id, icon } = props;
+    const { track: { name, artist, album, uri }, icon } = props;
+
 
     const handleClick = () => {
         props.onTrackClick();
