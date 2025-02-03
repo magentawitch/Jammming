@@ -19,31 +19,3 @@ function Tracklist(props) {
 
 export default Tracklist;
 
-
-
-
-/* function Example() {
-  return (
-    <App>
-        <SearchBar/>
-        <Columns>
-            <SearchResults>
-                <Tracklist>
-                    <Track icon={"+"} onIconClicked={...}/>
-                    <Track />
-                    <Track />
-                    <Track />
-                    <Track />
-                </Tracklist>
-            </SearchResults>
-            <Playlist>
-                <Tracklist>
-                    <Track  icon={"-"} onIconClicked={...}/>
-                    <Track />
-                    <Track />
-                </Tracklist>
-            </Playlist>
-        </Columns>
-    </App>
-  );
-} */

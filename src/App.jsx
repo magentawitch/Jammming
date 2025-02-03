@@ -7,6 +7,7 @@ import styles from './App.module.css'
 
 function App() {
   const [playlist, setPlaylist] = useState([]);
+  const [userInput, setUserInput] = useState();
 
   const handleAddTrack = (trackSelected) => {
     setPlaylist((prev) => [...prev, trackSelected]);
@@ -20,13 +21,17 @@ function App() {
     setPlaylist([]);
   }
 
+  const handleUserInput = input => {
+    setUserInput(input);
+  }
+
 
   return (
     <>
     <Header />
-    <SearchBar />
+    <SearchBar onUserInput={handleUserInput} />
     <div className={styles.tracklistsContainer}>
-      <SearchResults onAddTrack={handleAddTrack} />
+      <SearchResults onAddTrack={handleAddTrack} userInput={userInput} />
       <Playlist playlist={playlist} onRemoveTrack={handleRemoveTrack} onSavePlaylist={handleSavePlaylist} />
     </div>
 
