@@ -1,12 +1,14 @@
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 import Header from './Header/Header';
 import SearchBar from './SearchBar/SearchBar';
 import Playlist from './Playlist/Playlist';
 import SearchResults from './SearchResults/SearchResults';
+import { savePlaylist } from './Playlist/SaveCreatePlaylist';
 import styles from './App.module.css'
 
 function App() {
   const [playlist, setPlaylist] = useState([]);
+
   const [userInput, setUserInput] = useState();
 
   const handleAddTrack = (trackSelected) => {
@@ -17,13 +19,16 @@ function App() {
     setPlaylist(prev => prev.filter((track, i) => i !== trackKeySelected))
   }
 
-  const handleSavePlaylist = () => {
-    setPlaylist([]);
+  const handleSavePlaylist = async (playlistTitle, uriPlaylist) => {
+      await savePlaylist(playlistTitle, uriPlaylist);
+      setPlaylist([]);
   }
 
   const handleUserInput = input => {
     setUserInput(input);
   }
+
+
 
 
   return (

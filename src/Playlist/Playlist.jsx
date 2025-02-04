@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Tracklist from "../Tracklist/Tracklist";
 import styles from "./Playlist.module.css";
 
@@ -10,11 +10,12 @@ function Playlist(props) {
     }
 
     const handleSaveClick = () => {
-        if (props.playlist.length > 0) {
+        if (props.playlist.length > 0 && playlistTitle !== undefined) {
             const uriPlaylist = props.playlist.map(track => track.uri);
-            props.onSavePlaylist(uriPlaylist);
+            props.onSavePlaylist(playlistTitle, uriPlaylist);
+            setPlaylistTitle("");
         } else {
-            alert("You cannot save an empty playlist")
+            alert("You cannot save an empty or unnamed playlist")
         }  
     }
 
