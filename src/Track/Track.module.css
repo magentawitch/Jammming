@@ -5,9 +5,10 @@
     min-width: 25rem;
     justify-content: space-between;
     border-bottom: 1px solid #394032;
+    margin-top: .5rem;
 }
 
-.trackInfo {
+.trackInfoContainer {
     display: flex;
 }
 
@@ -16,8 +17,7 @@
     font-size: 1.1rem;
 }
 
-.trackArtist,
-.trackAlbum {
+.trackInfo {
     font-weight: 400;
     margin: .125rem;
     color: gray;
