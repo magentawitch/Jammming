@@ -10,7 +10,7 @@ function Playlist(props) {
     }
 
     const handleSaveClick = () => {
-        if (props.playlist.length > 0 && playlistTitle !== undefined) {
+        if (props.playlist.length > 0 && playlistTitle) {
             const uriPlaylist = props.playlist.map(track => track.uri);
             props.onSavePlaylist(playlistTitle, uriPlaylist);
             setPlaylistTitle("");
