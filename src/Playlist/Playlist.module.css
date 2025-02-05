@@ -26,6 +26,7 @@ form {
     border-bottom: 1px solid #394032;
     font-size: 1.75rem;
     color: #d1c9d9;
+    font-family: Arial;
 }
 
 .inputTitle:focus-visible {
