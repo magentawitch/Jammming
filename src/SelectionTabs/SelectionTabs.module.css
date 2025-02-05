@@ -1,0 +1,63 @@
+/* Selection Tabs */
+
+.container {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.selectedButton {
+    padding: 0.5rem 1.25rem;
+    margin: 1rem;
+    border: 2px solid #CBF55C;
+    border-radius: .7rem;
+    background-color: #CBF55C;
+    color: #1E073C;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 300ms ease-in-out;
+}
+
+.unselectedButton {
+    padding: 0.5rem 1.25rem;
+    margin: 1rem;
+    border: 2px solid #CBF55C;
+    border-radius: .7rem;
+    background-color: #290A50;
+    color: #CBF55C;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 300ms ease-in-out;
+}
+
+
+.unselectedButton:hover {
+  color: #1E073C;
+  background-color: #CBF55C;
+  border: 2px solid #CBF55C;
+}
+
+.unselectedButton:active {
+  color: #1E073C;
+  background-color: #99C73A;
+  border: 2px solid #99C73A;
+}
+
+.selectedButton:hover {
+    color: #1E073C;
+    background-color: #CBF55C;
+    border: 2px solid #CBF55C;
+  }
+  
+  .selectedButton:active {
+    color: #1E073C;
+    background-color: #CBF55C;
+    border: 2px solid #CBF55C;
+  }
+  
+  
