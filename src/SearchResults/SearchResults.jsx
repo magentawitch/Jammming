@@ -65,6 +65,9 @@ function SearchResults(props) {
 
     return (
         <div className={styles.container}>
+            <div className={styles.titleContainer}>
+            <h2 className={styles.sectionTitle}>Results</h2>
+            </div>
             <Tracklist icon="+" trackArray={trackArray} onTrackClick={handleTrackClick} />
         </div>
     )
