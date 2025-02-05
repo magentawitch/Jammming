@@ -26,10 +26,11 @@ function Playlist(props) {
             <form onSubmit={e => e.preventDefault()}>
                 <input className={styles.inputTitle} type="text" placeholder="Unnamed Playlist" value={playlistTitle} onChange={({ target }) => setPlaylistTitle(target.value)} />
             </form>
+            <div>
             {props.playlist.length > 0 && (
                 <Tracklist icon="-" trackArray={props.playlist} onTrackClick={handleTrackClick} />
             )}
-
+            </div>
             <button onClick={handleSaveClick}>SAVE TO SPOTIFY</button>
 
         </div>
