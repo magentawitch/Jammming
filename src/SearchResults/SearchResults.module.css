@@ -10,6 +10,7 @@
     height: 31.25rem;
     overflow: scroll;
     background-color: #170025bd;
+    border-radius: 2rem;
 }
 
 .titleContainer {

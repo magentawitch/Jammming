@@ -12,6 +12,7 @@
     height: 31.25rem;
     overflow-x: scroll;
     background-color: #170025bd;
+    border-radius: 2rem;
 }
 
 form {

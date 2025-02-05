@@ -22,6 +22,7 @@
     margin-bottom: 1rem;
     border-radius: 5px;
     border: 1px solid #240046;
+    font-size: 1rem;
     
 }
 
@@ -30,8 +31,8 @@
 }
 
 .userInput:focus {
-    border: 1px solid #9c539c;
-    outline: 1px solid #9c539c;
+    border: 1.25px solid #CBF55C;
+    outline: 1.25px solid #CBF55C;
 }
 
 .searchButton {

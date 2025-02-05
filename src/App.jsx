@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Header from './Header/Header';
 import SearchBar from './SearchBar/SearchBar';
+import SelectionTabs from './SelectionTabs/SelectionTabs';
 import Playlist from './Playlist/Playlist';
 import SearchResults from './SearchResults/SearchResults';
 import { savePlaylist } from './Playlist/SaveCreatePlaylist';
@@ -35,6 +36,7 @@ function App() {
     <>
     <Header />
     <SearchBar onUserInput={handleUserInput} />
+    <SelectionTabs />
     <div className={styles.tracklistsContainer}>
       <SearchResults onAddTrack={handleAddTrack} userInput={userInput} />
       <Playlist playlist={playlist} onRemoveTrack={handleRemoveTrack} onSavePlaylist={handleSavePlaylist} />

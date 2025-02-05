@@ -3,7 +3,7 @@ html {
   font-size: 16px;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #300d50;
+  background-color: #290A50;
   color: #d1c9d9;
 }
 
@@ -28,25 +28,25 @@ button,
 .button {
   padding: 0.5rem;
   margin: 1rem;
-  border: 2px solid #ff6600;
-  border-radius: .5rem;
-  background-color: #ff6600;
-  color: #fff;
+  border: 2px solid #CBF55C;
+  border-radius: .7rem;
+  background-color: #CBF55C;
+  color: #1E073C;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
   transition: all 300ms ease-in-out;
 }
 
 button:hover,
 .button:hover {
-  color: #f8f1fa;
-  background-color: #f77d2b;
-  border: 2px solid #f77d2b;
+  color: #1E073C;
+  background-color: #B1DD45;
+  border: 2px solid #B1DD45;
 }
 
 button:active,
 .button:active {
-  color: #deebec;
-  background-color: #cc5200;
-  border: 2px solid #cc5200;
+  color: #1E073C;
+  background-color: #99C73A;
+  border: 2px solid #99C73A;
 }
