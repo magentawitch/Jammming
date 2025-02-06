@@ -32,6 +32,8 @@
     font-family: Arial;
 }
 
+/* Media Query */
+
 @media only screen and (max-width: 500px) {
     .container {
         min-width: 22rem;
