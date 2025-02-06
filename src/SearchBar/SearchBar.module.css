@@ -10,8 +10,6 @@
 
 .searchBarForm {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -38,4 +36,39 @@
 .searchButton {
     margin-top: .125rem;
     padding: .5rem 1rem;
+}
+
+.buttonText {
+    display: block;
+}
+.searchImg {
+    display: none;
+}
+
+/* Media Query */
+
+@media only screen and (max-width: 910px) {
+    .searchBar {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .userInput {
+        padding: 0.75rem 3rem;
+    }
+
+    .searchButton {
+        padding: .7rem 1rem;
+    }
+
+    .buttonText {
+        display: none;
+    }
+
+    .searchImg {
+        display: block;
+        width: 100%;
+    }
+
 }
