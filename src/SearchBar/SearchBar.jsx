@@ -6,6 +6,7 @@ function SearchBar(props) {
 
     const handleClick = () => {
         props.onUserInput(input);
+        setInput("");
     }
 
     return (
