@@ -60,3 +60,10 @@
   border: none;
   font-size: 0.9rem;
 }
+
+@media only screen and (max-width: 500px) {
+    .track {
+        min-width: 22rem;
+        max-width: 22rem;
+    }
+}

@@ -64,7 +64,7 @@ function SearchResults(props) {
 
 
     return (
-        <div className={styles.container}>
+        <div className={props.isSmallScreen ?  props.activeTab === "resultsTab" ? styles.container : styles.hide : styles.container}>
             <div className={styles.titleContainer}>
             <h2 className={styles.sectionTitle}>Results</h2>
             </div>

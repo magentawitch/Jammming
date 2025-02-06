@@ -2,17 +2,15 @@ import React, { useState } from "react";
 import styles from "./SelectionTabs.module.css";
 
 function SelectionTabs(props) {
-    const [currentButton, setCurrentButton] = useState("resultsButton");
 
-
-    const setActiveTab = buttonType => {
-        setCurrentButton(buttonType);
+    const setActiveTab = tab => {
+        props.onTabSelection(tab);
     }
 
     return (
         <div className={styles.container}>
-            <button className={currentButton === "resultsButton" ? styles.selectedButton : styles.unselectedButton} onClick={() => setActiveTab("resultsButton")}>Results</button>
-            <button className={currentButton === "playlistButton" ? styles.selectedButton : styles.unselectedButton} onClick={() => setActiveTab("playlistButton")}>Playlist</button>
+            <button className={props.activeTab === "resultsTab" ? styles.selectedButton : styles.unselectedButton} onClick={() => setActiveTab("resultsTab")}>Results</button>
+            <button className={props.activeTab === "playlistTab" ? styles.selectedButton : styles.unselectedButton} onClick={() => setActiveTab("playlistTab")}>Playlist</button>
         </div>
     )
 }
