@@ -23,7 +23,7 @@ function Playlist(props) {
 
     return (
         <div className={props.isSmallScreen ?  props.activeTab === "playlistTab" ? styles.container : styles.hide : styles.container}>
-            <form onSubmit={e => e.preventDefault()}>
+            <form className={styles.inputTitleForm} onSubmit={e => e.preventDefault()}>
                 <input className={styles.inputTitle} type="text" placeholder="Unnamed Playlist" value={playlistTitle} onChange={({ target }) => setPlaylistTitle(target.value)} />
             </form>
             <div>
