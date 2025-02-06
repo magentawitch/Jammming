@@ -19,7 +19,7 @@
     display: none;
 }
 
-form {
+.inputTitleForm {
     margin-top: .5rem;
     width: 100%;
 }
