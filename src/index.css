@@ -50,3 +50,11 @@ button:active,
   background-color: #99C73A;
   border: 2px solid #99C73A;
 }
+
+/* Media Query */
+
+@media only screen and (max-width: 399px) {
+  html {
+    font-size: 14px;
+  }
+}
