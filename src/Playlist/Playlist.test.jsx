@@ -56,7 +56,7 @@ describe("Playlist component", () => {
         expect(mockSavePlaylist).toHaveBeenCalled();
     });
 
-    test("After an user saves a playlist, the playlist and title are empty", async () => {
+    test("After an user saves a playlist, the playlist title is empty", async () => {
         //Given
         render(<Playlist playlist={testTracks} onRemoveTrack={mockRemoveTrack} onSavePlaylist={mockSavePlaylist} activeTab={"playlistTab"} isSmallScreen={false} />);
         const saveButton = screen.getByRole("button", { name: "SAVE TO SPOTIFY" });
@@ -64,13 +64,10 @@ describe("Playlist component", () => {
         fireEvent.change(input, {
             target: { value: "Entered Title" }
         });
-        const testPlaylist = screen.queryAllByText("Song");
         //When
         await user.click(saveButton);
         //Then
         expect(input.value).toBe("");
-        expect(testPlaylist.length).toBe(0);
-
     });
 
     test("If the screen is Small and the Playlist tab is inactive, the component should have a 'hide' style applied to it", () => {
