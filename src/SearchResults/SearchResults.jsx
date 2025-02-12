@@ -21,7 +21,7 @@ function SearchResults(props) {
 
             const url = "https://api.spotify.com/v1/search?q=";
             const type = "type=track"
-            const limit = "limit=10";
+            const limit = "limit=50";
             const searchQuery = props.userInput.replace(" ", "+");
             const endpoint = `${url}${searchQuery}&${type}&${limit}`;
             const payload = {
