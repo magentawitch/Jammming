@@ -5,9 +5,8 @@ import { getValidAccessToken } from "../Auth/token";
 
 function SearchResults(props) {
     const [trackArray, setTrackArray] = useState([]);
-
     useEffect(() => {
-        searchTrack();
+        searchTrack();  
     }, [props.userInput])
 
 
